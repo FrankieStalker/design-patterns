@@ -9,6 +9,7 @@ struct AuthView: View {
             content
         }
         .navigationTitle(title)
+        .navigationBarTitleDisplayMode(.inline)
         .sheet(
             isPresented: $state.isPresentingAuthView,
             onDismiss: onSheetDismiss
@@ -29,7 +30,7 @@ struct AuthView: View {
             Tab("Teacher view", systemImage: "person.and.background.dotted") {
                 TeacherView(state: $state)
             }
-            Tab("Teacher view", systemImage: "graduationcap") {
+            Tab("Student view", systemImage: "graduationcap") {
                 StudentView(state: $state)
             }
         }

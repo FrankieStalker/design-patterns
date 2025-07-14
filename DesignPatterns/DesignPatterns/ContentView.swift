@@ -19,6 +19,7 @@ struct ContentView: View {
                 case .abstractFactory: AuthView()
                 }
             }
+            .navigationTitle(Text("Design Patterns"))
         }
     }
 }
