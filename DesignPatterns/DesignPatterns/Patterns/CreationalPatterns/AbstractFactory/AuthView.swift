@@ -22,7 +22,7 @@ struct AuthView: View {
     }
     
     private var title: Text {
-        Text("Abstract Factory")
+        Text("Abstract Factory Pattern")
     }
     
     private var content: some View {
