@@ -1,29 +1,6 @@
 import SwiftUI
 
-struct CoRViewModel {
-    private let loginHandler: LoginHandler
-    private let signUpHandler: SignUpHandler
-    
-    init(
-        loginHandler: LoginHandler = LoginHandler(with: LocationHandler()),
-        signUpHandler: SignUpHandler = SignUpHandler(with: NotificationHandler())
-    ) {
-        self.loginHandler = loginHandler
-        self.signUpHandler = signUpHandler
-    }
-    
-    func login() {
-        
-    }
-    
-    func signUp() {
-        
-    }
-}
-
 struct CoRView: View {
-    
-    
     var body: some View {
         tabView
             .navigationTitle(title)
