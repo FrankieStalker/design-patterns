@@ -4,6 +4,7 @@ enum Route: Hashable {
     case abstractFactory
     case adapter
     case chainOfResponsibility
+    case builder
 }
 
 struct ContentView: View {
@@ -14,6 +15,7 @@ struct ContentView: View {
             List {
                 Section(header: Text("Creational Patterns")) {
                     NavigationLink("Abstract Factory", value: Route.abstractFactory)
+                    NavigationLink("Builder", value: Route.builder)
                 }
                 Section(header: Text("Structural Patterns")) {
                     NavigationLink("Adapter", value: Route.adapter)
@@ -27,6 +29,7 @@ struct ContentView: View {
                 case .abstractFactory: AuthView()
                 case .adapter: AdapterAuthView()
                 case .chainOfResponsibility: CoRView()
+                case .builder: BuilderView()
                 }
             }
             .navigationTitle(Text("Design Patterns"))
